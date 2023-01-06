@@ -5,8 +5,8 @@ import { ethers } from "ethers";
 import SoulboundABI from "./SoulboundABI.json"
 
 // if env is not working then directly put the Infura Id and Key
-const projectId = "2JwnITRYL8qxpSsA0lp5yXRGk8m";
-const projectSecretKey = "ad81c7eb6e7578e078eaed4994f5f2f6";
+const projectId = process.env.REACT_APP_PROJECT_ID;
+const projectSecretKey = process.env.REACT_APP_PROJECT_KEY;
 const authorization = "Basic " + btoa(projectId + ":" + projectSecretKey);
 
 function App() {
